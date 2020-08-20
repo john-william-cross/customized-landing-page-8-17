@@ -1,0 +1,28 @@
+//Theming Bootstrap 4: https://www.youtube.com/watch?v=hnCmSXCZEpU
+//On !default: https://stackoverflow.com/a/42658976/6305196
+//A Sass !defualt use case: https://thoughtbot.com/blog/sass-default
+//things defined here will ignore the "!default" assignment
+
+//in example below, this changes bootstrap blue to the css color of red
+// $blue: red;
+
+//in this example, the default rounded button corners are now set to false (normally they are set to true)
+$enable-rounded: false;
+$blue: skyblue;
+
+
+//map-get is a sass function where it gets a mapping, a list of key value pairs such as a title and a color
+//in the _variables.scss file, $spacers is a map (a list); 4 is a size
+button.btn {
+    padding: map-get($map: $spacers, $key: 4);
+}
+
+button.btn-primary {
+    background-color: $blue;
+    border: 1px solid $blue;
+}
+
+button.btn-danger {
+    background-color: $orange;
+    border: 1px solid $orange;
+}

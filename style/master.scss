@@ -1,1 +1,9 @@
 //this is compiled and changed to css
+//all we need to compile is what's in this master file
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+@import "theme.scss";
+
+@import "bootstrap/bootstrap.scss"
