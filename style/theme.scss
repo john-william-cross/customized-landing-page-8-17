@@ -10,11 +10,19 @@
 $enable-rounded: false;
 $blue: skyblue;
 
+//here, I've redefined the $danger color to blue
+$danger: $blue;
+
 
 //map-get is a sass function where it gets a mapping, a list of key value pairs such as a title and a color
-//in the _variables.scss file, $spacers is a map (a list); 4 is a size
+//in the _variables.scss file, $spac\ ers is a map (a list); 4 is a size
 button.btn {
     padding: map-get($map: $spacers, $key: 4);
+}
+
+//here, I reasigned the hover color for btn-danger with the new vaule of blue assigned above
+button.btn-danger:hover {
+    background-color: $danger;
 }
 
 button.btn-primary {
@@ -23,6 +31,6 @@ button.btn-primary {
 }
 
 button.btn-danger {
-    background-color: $orange;
-    border: 1px solid $orange;
+    background-color: $yellow;
+    border: 1px solid $yellow;
 }

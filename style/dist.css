@@ -1,13 +1,16 @@
 button.btn {
   padding: 1.5rem; }
 
+button.btn-danger:hover {
+  background-color: skyblue; }
+
 button.btn-primary {
   background-color: skyblue;
   border: 1px solid skyblue; }
 
 button.btn-danger {
-  background-color: #fd7e14;
-  border: 1px solid #fd7e14; }
+  background-color: #ffc107;
+  border: 1px solid #ffc107; }
 
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
@@ -7619,5 +7622,7 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+p {
+  text-align: justify; }
 
 /*# sourceMappingURL=dist.css.map */
