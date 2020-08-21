@@ -13,6 +13,9 @@ $blue: skyblue;
 //here, I've redefined the $danger color to blue
 $danger: $blue;
 
+// Here, I overwrite the default color to sienna;
+$navbar-light-hover-color: sienna;
+
 
 //map-get is a sass function where it gets a mapping, a list of key value pairs such as a title and a color
 //in the _variables.scss file, $spac\ ers is a map (a list); 4 is a size
@@ -25,12 +28,22 @@ button.btn-danger:hover {
     background-color: $danger;
 }
 
-button.btn-primary {
-    background-color: $blue;
-    border: 1px solid $blue;
-}
+// This is the card background color: 
+// $light: $gray-100 !default;
 
-button.btn-danger {
-    background-color: $yellow;
-    border: 1px solid $yellow;
-}
+// .carousel {
+//     background-color: rgba(255, 192, 203, .3);
+// }
+
+
+//The code below is from Mike's example
+
+// button.btn-primary {
+//     background-color: $blue;
+//     border: 1px solid $blue;
+// }
+
+// button.btn-danger {
+//     background-color: $yellow;
+//     border: 1px solid $yellow;
+// }
