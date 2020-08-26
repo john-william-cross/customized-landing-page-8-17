@@ -1,1 +1,19 @@
 //this is compiled and changed to css
+//all we need to compile is what's in this master file
+
+//Things have to go in this order
+//import first to access these
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+//our custom theming of bootstrap
+@import "theme.scss";
+
+
+//bootstrap
+@import "bootstrap/bootstrap.scss";
+
+
+//style overwriting bootstrap
+@import "style.scss";

@@ -1,0 +1,49 @@
+//Theming Bootstrap 4: https://www.youtube.com/watch?v=hnCmSXCZEpU
+//On !default: https://stackoverflow.com/a/42658976/6305196
+//A Sass !defualt use case: https://thoughtbot.com/blog/sass-default
+//things defined here will ignore the "!default" assignment
+
+//in example below, this changes bootstrap blue to the css color of red
+// $blue: red;
+
+//in this example, the default rounded button corners are now set to false (normally they are set to true)
+$enable-rounded: false;
+$blue: skyblue;
+
+//here, I've redefined the $danger color to blue
+$danger: $blue;
+
+// Here, I overwrite the default color to sienna;
+$navbar-light-hover-color: sienna;
+
+
+//map-get is a sass function where it gets a mapping, a list of key value pairs such as a title and a color
+//in the _variables.scss file, $spac\ ers is a map (a list); 4 is a size
+button.btn {
+    padding: map-get($map: $spacers, $key: 4);
+}
+
+//here, I reasigned the hover color for btn-danger with the new vaule of blue assigned above
+button.btn-danger:hover {
+    background-color: $danger;
+}
+
+// This is the card background color: 
+// $light: $gray-100 !default;
+
+// .carousel {
+//     background-color: rgba(255, 192, 203, .3);
+// }
+
+
+//The code below is from Mike's example
+
+// button.btn-primary {
+//     background-color: $blue;
+//     border: 1px solid $blue;
+// }
+
+// button.btn-danger {
+//     background-color: $yellow;
+//     border: 1px solid $yellow;
+// }

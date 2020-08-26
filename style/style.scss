@@ -1,0 +1,33 @@
+// This file is for everything that comes after bootstrap; it's not a bootstrap 
+// variable because it's not in theme
+// p {
+//     text-align: justify;
+// }
+
+body {
+    font-family: 'Major Mono Display', monospace;
+    background-color: $light;
+    border: 1rem solid white;
+}
+
+img {
+    border: none;
+    box-shadow: 2px 2px 5px black;
+
+    // object-fit: contain;
+}
+
+h1,
+p {
+    text-shadow: 2px 2px 5px black;
+}
+
+
+
+@media (min-width: 0px) {
+    .carousel-multi-item-2 .col-md-3 {
+        float: left;
+        width: 25%;
+        max-width: 100%;
+    }
+}
