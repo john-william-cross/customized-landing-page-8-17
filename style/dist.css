@@ -7617,7 +7617,7 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: 'Major Mono Display', monospace;
   background-color: #f8f9fa;
-  border: 1rem solid white; }
+  border: 1rem solid black; }
 
 img {
   border: none;
